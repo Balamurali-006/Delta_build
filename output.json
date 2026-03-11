@@ -1,0 +1,2458 @@
+{
+  "success": true,
+  "actusJson": {
+    "contractType": "ANN",
+    "contractID": "contract_001",
+    "contractRole": "RPA",
+    "counterpartyID": "CP01",
+    "creatorID": "CREATOR01",
+    "calendar": "NOCALENDAR",
+    "businessDayConvention": "SCF",
+    "currency": "INR",
+    "contractDealDate": "2024-01-01",
+    "initialExchangeDate": "2024-01-01",
+    "statusDate": "2023-12-31",
+    "maturityDate": "2034-01-01",
+    "notionalPrincipal": 2500000,
+    "nominalInterestRate": 0.09,
+    "dayCountConvention": "A365",
+    "cycleOfInterestPayment": "P1ML0",
+    "cycleAnchorDateOfInterestPayment": "2024-02-01",
+    "cycleOfPrincipalRedemption": "P1ML0",
+    "cycleAnchorDateOfPrincipalRedemption": "2024-02-01",
+    "nextPrincipalRedemptionPayment": null,
+    "rateMultiplier": 1.0,
+    "rateSpread": 0.0,
+    "confidence": "HIGH",
+    "missingFields": [],
+    "warnings": []
+  },
+  "summary": {
+    "contractType": "ANN",
+    "contractID": "contract_001",
+    "currency": "INR",
+    "principal": 2500000,
+    "nominalRate": 0.09,
+    "startDate": "2024-01-01",
+    "maturityDate": "2034-01-01",
+    "totalEvents": 241,
+    "totalInterest": 3632879.66,
+    "totalPrincipal": 2500000.0,
+    "totalCashFlow": 6132879.66,
+    "confidence": "HIGH",
+    "warnings": [],
+    "missingFields": []
+  },
+  "cashFlows": [
+    {
+      "type": "IED",
+      "time": "2024-01-01T00:00",
+      "payoff": -2500000.0,
+      "currency": "INR",
+      "nominalValue": 2500000.0,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-02-01T00:00",
+      "payoff": -19109.589,
+      "currency": "INR",
+      "nominalValue": 2519109.589,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19109.589,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-02-01T00:00",
+      "payoff": 19109.589,
+      "currency": "INR",
+      "nominalValue": 2519109.589,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-03-01T00:00",
+      "payoff": -18013.359,
+      "currency": "INR",
+      "nominalValue": 2537122.948,
+      "nominalRate": 0.09,
+      "nominalAccrued": 18013.359,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-03-01T00:00",
+      "payoff": 18013.359,
+      "currency": "INR",
+      "nominalValue": 2537122.948,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-04-01T00:00",
+      "payoff": -19393.3508,
+      "currency": "INR",
+      "nominalValue": 2556516.2988,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19393.3508,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-04-01T00:00",
+      "payoff": 19393.3508,
+      "currency": "INR",
+      "nominalValue": 2556516.2988,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-05-01T00:00",
+      "payoff": -18911.2165,
+      "currency": "INR",
+      "nominalValue": 2575427.5152,
+      "nominalRate": 0.09,
+      "nominalAccrued": 18911.2165,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-05-01T00:00",
+      "payoff": 18911.2165,
+      "currency": "INR",
+      "nominalValue": 2575427.5152,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-06-01T00:00",
+      "payoff": -19686.1446,
+      "currency": "INR",
+      "nominalValue": 2595113.6598,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19686.1446,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-06-01T00:00",
+      "payoff": 19686.1446,
+      "currency": "INR",
+      "nominalValue": 2595113.6598,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-07-01T00:00",
+      "payoff": -19196.7312,
+      "currency": "INR",
+      "nominalValue": 2614310.391,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19196.7312,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-07-01T00:00",
+      "payoff": 19196.7312,
+      "currency": "INR",
+      "nominalValue": 2614310.391,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-08-01T00:00",
+      "payoff": -19983.3589,
+      "currency": "INR",
+      "nominalValue": 2634293.7499,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19983.3589,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-08-01T00:00",
+      "payoff": 19983.3589,
+      "currency": "INR",
+      "nominalValue": 2634293.7499,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-09-01T00:00",
+      "payoff": -20136.1084,
+      "currency": "INR",
+      "nominalValue": 2654429.8582,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20136.1084,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-09-01T00:00",
+      "payoff": 20136.1084,
+      "currency": "INR",
+      "nominalValue": 2654429.8582,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-10-01T00:00",
+      "payoff": -19635.5085,
+      "currency": "INR",
+      "nominalValue": 2674065.3668,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19635.5085,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-10-01T00:00",
+      "payoff": 19635.5085,
+      "currency": "INR",
+      "nominalValue": 2674065.3668,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-11-01T00:00",
+      "payoff": -20440.1161,
+      "currency": "INR",
+      "nominalValue": 2694505.4829,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20440.1161,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-11-01T00:00",
+      "payoff": 20440.1161,
+      "currency": "INR",
+      "nominalValue": 2694505.4829,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2024-12-01T00:00",
+      "payoff": -19931.9584,
+      "currency": "INR",
+      "nominalValue": 2714437.4412,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19931.9584,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2024-12-01T00:00",
+      "payoff": 19931.9584,
+      "currency": "INR",
+      "nominalValue": 2714437.4412,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-01-01T00:00",
+      "payoff": -20748.7136,
+      "currency": "INR",
+      "nominalValue": 2735186.1548,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20748.7136,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-01-01T00:00",
+      "payoff": 20748.7136,
+      "currency": "INR",
+      "nominalValue": 2735186.1548,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-02-01T00:00",
+      "payoff": -20907.3133,
+      "currency": "INR",
+      "nominalValue": 2756093.4682,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20907.3133,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-02-01T00:00",
+      "payoff": 20907.3133,
+      "currency": "INR",
+      "nominalValue": 2756093.4682,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-03-01T00:00",
+      "payoff": -19028.3713,
+      "currency": "INR",
+      "nominalValue": 2775121.8395,
+      "nominalRate": 0.09,
+      "nominalAccrued": 19028.3713,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-03-01T00:00",
+      "payoff": 19028.3713,
+      "currency": "INR",
+      "nominalValue": 2775121.8395,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-04-01T00:00",
+      "payoff": -21212.5752,
+      "currency": "INR",
+      "nominalValue": 2796334.4147,
+      "nominalRate": 0.09,
+      "nominalAccrued": 21212.5752,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-04-01T00:00",
+      "payoff": 21212.5752,
+      "currency": "INR",
+      "nominalValue": 2796334.4147,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-05-01T00:00",
+      "payoff": -20685.2135,
+      "currency": "INR",
+      "nominalValue": 2817019.6282,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20685.2135,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-05-01T00:00",
+      "payoff": 20685.2135,
+      "currency": "INR",
+      "nominalValue": 2817019.6282,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-06-01T00:00",
+      "payoff": -21532.835,
+      "currency": "INR",
+      "nominalValue": 2838552.4631,
+      "nominalRate": 0.09,
+      "nominalAccrued": 21532.835,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-06-01T00:00",
+      "payoff": 21532.835,
+      "currency": "INR",
+      "nominalValue": 2838552.4631,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-07-01T00:00",
+      "payoff": -20997.5114,
+      "currency": "INR",
+      "nominalValue": 2859549.9745,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20997.5114,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-07-01T00:00",
+      "payoff": 20997.5114,
+      "currency": "INR",
+      "nominalValue": 2859549.9745,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-08-01T00:00",
+      "payoff": -21857.9299,
+      "currency": "INR",
+      "nominalValue": 2881407.9044,
+      "nominalRate": 0.09,
+      "nominalAccrued": 21857.9299,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-08-01T00:00",
+      "payoff": 21857.9299,
+      "currency": "INR",
+      "nominalValue": 2881407.9044,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-09-01T00:00",
+      "payoff": -22025.0084,
+      "currency": "INR",
+      "nominalValue": 2903432.9128,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22025.0084,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-09-01T00:00",
+      "payoff": 22025.0084,
+      "currency": "INR",
+      "nominalValue": 2903432.9128,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-10-01T00:00",
+      "payoff": -21477.4489,
+      "currency": "INR",
+      "nominalValue": 2924910.3618,
+      "nominalRate": 0.09,
+      "nominalAccrued": 21477.4489,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-10-01T00:00",
+      "payoff": 21477.4489,
+      "currency": "INR",
+      "nominalValue": 2924910.3618,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-11-01T00:00",
+      "payoff": -22357.534,
+      "currency": "INR",
+      "nominalValue": 2947267.8958,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22357.534,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-11-01T00:00",
+      "payoff": 22357.534,
+      "currency": "INR",
+      "nominalValue": 2947267.8958,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2025-12-01T00:00",
+      "payoff": -21801.7077,
+      "currency": "INR",
+      "nominalValue": 2969069.6035,
+      "nominalRate": 0.09,
+      "nominalAccrued": 21801.7077,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2025-12-01T00:00",
+      "payoff": 21801.7077,
+      "currency": "INR",
+      "nominalValue": 2969069.6035,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-01-01T00:00",
+      "payoff": -22695.08,
+      "currency": "INR",
+      "nominalValue": 2991764.6835,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22695.08,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-01-01T00:00",
+      "payoff": 22695.08,
+      "currency": "INR",
+      "nominalValue": 2991764.6835,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-02-01T00:00",
+      "payoff": -22868.5574,
+      "currency": "INR",
+      "nominalValue": 3014633.2409,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22868.5574,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-02-01T00:00",
+      "payoff": 22868.5574,
+      "currency": "INR",
+      "nominalValue": 3014633.2409,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-03-01T00:00",
+      "payoff": -20813.3583,
+      "currency": "INR",
+      "nominalValue": 3035446.5992,
+      "nominalRate": 0.09,
+      "nominalAccrued": 20813.3583,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-03-01T00:00",
+      "payoff": 20813.3583,
+      "currency": "INR",
+      "nominalValue": 3035446.5992,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-04-01T00:00",
+      "payoff": -23202.4548,
+      "currency": "INR",
+      "nominalValue": 3058649.054,
+      "nominalRate": 0.09,
+      "nominalAccrued": 23202.4548,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-04-01T00:00",
+      "payoff": 23202.4548,
+      "currency": "INR",
+      "nominalValue": 3058649.054,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-05-01T00:00",
+      "payoff": -22625.6231,
+      "currency": "INR",
+      "nominalValue": 3081274.6771,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22625.6231,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-05-01T00:00",
+      "payoff": 22625.6231,
+      "currency": "INR",
+      "nominalValue": 3081274.6771,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-06-01T00:00",
+      "payoff": -23552.7571,
+      "currency": "INR",
+      "nominalValue": 3104827.4343,
+      "nominalRate": 0.09,
+      "nominalAccrued": 23552.7571,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-06-01T00:00",
+      "payoff": 23552.7571,
+      "currency": "INR",
+      "nominalValue": 3104827.4343,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-07-01T00:00",
+      "payoff": -22967.2166,
+      "currency": "INR",
+      "nominalValue": 3127794.6509,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22967.2166,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-07-01T00:00",
+      "payoff": 22967.2166,
+      "currency": "INR",
+      "nominalValue": 3127794.6509,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-08-01T00:00",
+      "payoff": -23908.3482,
+      "currency": "INR",
+      "nominalValue": 3151702.999,
+      "nominalRate": 0.09,
+      "nominalAccrued": 23908.3482,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-08-01T00:00",
+      "payoff": 23908.3482,
+      "currency": "INR",
+      "nominalValue": 3151702.999,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-09-01T00:00",
+      "payoff": -24091.0996,
+      "currency": "INR",
+      "nominalValue": 3175794.0987,
+      "nominalRate": 0.09,
+      "nominalAccrued": 24091.0996,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-09-01T00:00",
+      "payoff": 24091.0996,
+      "currency": "INR",
+      "nominalValue": 3175794.0987,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-10-01T00:00",
+      "payoff": -23492.1755,
+      "currency": "INR",
+      "nominalValue": 3199286.2742,
+      "nominalRate": 0.09,
+      "nominalAccrued": 23492.1755,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-10-01T00:00",
+      "payoff": 23492.1755,
+      "currency": "INR",
+      "nominalValue": 3199286.2742,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-11-01T00:00",
+      "payoff": -24454.8184,
+      "currency": "INR",
+      "nominalValue": 3223741.0926,
+      "nominalRate": 0.09,
+      "nominalAccrued": 24454.8184,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-11-01T00:00",
+      "payoff": 24454.8184,
+      "currency": "INR",
+      "nominalValue": 3223741.0926,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2026-12-01T00:00",
+      "payoff": -23846.8519,
+      "currency": "INR",
+      "nominalValue": 3247587.9445,
+      "nominalRate": 0.09,
+      "nominalAccrued": 23846.8519,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2026-12-01T00:00",
+      "payoff": 23846.8519,
+      "currency": "INR",
+      "nominalValue": 3247587.9445,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-01-01T00:00",
+      "payoff": -24824.0284,
+      "currency": "INR",
+      "nominalValue": 3272411.9729,
+      "nominalRate": 0.09,
+      "nominalAccrued": 24824.0284,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-01-01T00:00",
+      "payoff": 24824.0284,
+      "currency": "INR",
+      "nominalValue": 3272411.9729,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-02-01T00:00",
+      "payoff": -25013.7792,
+      "currency": "INR",
+      "nominalValue": 3297425.7521,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25013.7792,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-02-01T00:00",
+      "payoff": 25013.7792,
+      "currency": "INR",
+      "nominalValue": 3297425.7521,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-03-01T00:00",
+      "payoff": -22765.7888,
+      "currency": "INR",
+      "nominalValue": 3320191.5408,
+      "nominalRate": 0.09,
+      "nominalAccrued": 22765.7888,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-03-01T00:00",
+      "payoff": 22765.7888,
+      "currency": "INR",
+      "nominalValue": 3320191.5408,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-04-01T00:00",
+      "payoff": -25378.9984,
+      "currency": "INR",
+      "nominalValue": 3345570.5392,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25378.9984,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-04-01T00:00",
+      "payoff": 25378.9984,
+      "currency": "INR",
+      "nominalValue": 3345570.5392,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-05-01T00:00",
+      "payoff": -24748.056,
+      "currency": "INR",
+      "nominalValue": 3370318.5952,
+      "nominalRate": 0.09,
+      "nominalAccrued": 24748.056,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-05-01T00:00",
+      "payoff": 24748.056,
+      "currency": "INR",
+      "nominalValue": 3370318.5952,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-06-01T00:00",
+      "payoff": -25762.1613,
+      "currency": "INR",
+      "nominalValue": 3396080.7565,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25762.1613,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-06-01T00:00",
+      "payoff": 25762.1613,
+      "currency": "INR",
+      "nominalValue": 3396080.7565,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-07-01T00:00",
+      "payoff": -25121.6933,
+      "currency": "INR",
+      "nominalValue": 3421202.4498,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25121.6933,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-07-01T00:00",
+      "payoff": 25121.6933,
+      "currency": "INR",
+      "nominalValue": 3421202.4498,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-08-01T00:00",
+      "payoff": -26151.1091,
+      "currency": "INR",
+      "nominalValue": 3447353.559,
+      "nominalRate": 0.09,
+      "nominalAccrued": 26151.1091,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-08-01T00:00",
+      "payoff": 26151.1091,
+      "currency": "INR",
+      "nominalValue": 3447353.559,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-09-01T00:00",
+      "payoff": -26351.0039,
+      "currency": "INR",
+      "nominalValue": 3473704.5629,
+      "nominalRate": 0.09,
+      "nominalAccrued": 26351.0039,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-09-01T00:00",
+      "payoff": 26351.0039,
+      "currency": "INR",
+      "nominalValue": 3473704.5629,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-10-01T00:00",
+      "payoff": -25695.8968,
+      "currency": "INR",
+      "nominalValue": 3499400.4596,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25695.8968,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-10-01T00:00",
+      "payoff": 25695.8968,
+      "currency": "INR",
+      "nominalValue": 3499400.4596,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-11-01T00:00",
+      "payoff": -26748.8419,
+      "currency": "INR",
+      "nominalValue": 3526149.3015,
+      "nominalRate": 0.09,
+      "nominalAccrued": 26748.8419,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-11-01T00:00",
+      "payoff": 26748.8419,
+      "currency": "INR",
+      "nominalValue": 3526149.3015,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2027-12-01T00:00",
+      "payoff": -26083.8441,
+      "currency": "INR",
+      "nominalValue": 3552233.1457,
+      "nominalRate": 0.09,
+      "nominalAccrued": 26083.8441,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2027-12-01T00:00",
+      "payoff": 26083.8441,
+      "currency": "INR",
+      "nominalValue": 3552233.1457,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-01-01T00:00",
+      "payoff": -27152.6862,
+      "currency": "INR",
+      "nominalValue": 3579385.8319,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27152.6862,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-01-01T00:00",
+      "payoff": 27152.6862,
+      "currency": "INR",
+      "nominalValue": 3579385.8319,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-02-01T00:00",
+      "payoff": -27360.2369,
+      "currency": "INR",
+      "nominalValue": 3606746.0688,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27360.2369,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-02-01T00:00",
+      "payoff": 27360.2369,
+      "currency": "INR",
+      "nominalValue": 3606746.0688,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-03-01T00:00",
+      "payoff": -25790.7048,
+      "currency": "INR",
+      "nominalValue": 3632536.7736,
+      "nominalRate": 0.09,
+      "nominalAccrued": 25790.7048,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-03-01T00:00",
+      "payoff": 25790.7048,
+      "currency": "INR",
+      "nominalValue": 3632536.7736,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-04-01T00:00",
+      "payoff": -27766.514,
+      "currency": "INR",
+      "nominalValue": 3660303.2875,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27766.514,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-04-01T00:00",
+      "payoff": 27766.514,
+      "currency": "INR",
+      "nominalValue": 3660303.2875,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-05-01T00:00",
+      "payoff": -27076.2161,
+      "currency": "INR",
+      "nominalValue": 3687379.5036,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27076.2161,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-05-01T00:00",
+      "payoff": 27076.2161,
+      "currency": "INR",
+      "nominalValue": 3687379.5036,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-06-01T00:00",
+      "payoff": -28185.7228,
+      "currency": "INR",
+      "nominalValue": 3715565.2264,
+      "nominalRate": 0.09,
+      "nominalAccrued": 28185.7228,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-06-01T00:00",
+      "payoff": 28185.7228,
+      "currency": "INR",
+      "nominalValue": 3715565.2264,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-07-01T00:00",
+      "payoff": -27485.003,
+      "currency": "INR",
+      "nominalValue": 3743050.2295,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27485.003,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-07-01T00:00",
+      "payoff": 27485.003,
+      "currency": "INR",
+      "nominalValue": 3743050.2295,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-08-01T00:00",
+      "payoff": -28611.2607,
+      "currency": "INR",
+      "nominalValue": 3771661.4901,
+      "nominalRate": 0.09,
+      "nominalAccrued": 28611.2607,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-08-01T00:00",
+      "payoff": 28611.2607,
+      "currency": "INR",
+      "nominalValue": 3771661.4901,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-09-01T00:00",
+      "payoff": -28829.9604,
+      "currency": "INR",
+      "nominalValue": 3800491.4505,
+      "nominalRate": 0.09,
+      "nominalAccrued": 28829.9604,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-09-01T00:00",
+      "payoff": 28829.9604,
+      "currency": "INR",
+      "nominalValue": 3800491.4505,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-10-01T00:00",
+      "payoff": -28113.2244,
+      "currency": "INR",
+      "nominalValue": 3828604.675,
+      "nominalRate": 0.09,
+      "nominalAccrued": 28113.2244,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-10-01T00:00",
+      "payoff": 28113.2244,
+      "currency": "INR",
+      "nominalValue": 3828604.675,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-11-01T00:00",
+      "payoff": -29265.2248,
+      "currency": "INR",
+      "nominalValue": 3857869.8997,
+      "nominalRate": 0.09,
+      "nominalAccrued": 29265.2248,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-11-01T00:00",
+      "payoff": 29265.2248,
+      "currency": "INR",
+      "nominalValue": 3857869.8997,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2028-12-01T00:00",
+      "payoff": -28537.6678,
+      "currency": "INR",
+      "nominalValue": 3886407.5675,
+      "nominalRate": 0.09,
+      "nominalAccrued": 28537.6678,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2028-12-01T00:00",
+      "payoff": 28537.6678,
+      "currency": "INR",
+      "nominalValue": 3886407.5675,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-01-01T00:00",
+      "payoff": -29707.0606,
+      "currency": "INR",
+      "nominalValue": 3916114.6281,
+      "nominalRate": 0.09,
+      "nominalAccrued": 29707.0606,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-01-01T00:00",
+      "payoff": 29707.0606,
+      "currency": "INR",
+      "nominalValue": 3916114.6281,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-02-01T00:00",
+      "payoff": -29934.1365,
+      "currency": "INR",
+      "nominalValue": 3946048.7646,
+      "nominalRate": 0.09,
+      "nominalAccrued": 29934.1365,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-02-01T00:00",
+      "payoff": 29934.1365,
+      "currency": "INR",
+      "nominalValue": 3946048.7646,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-03-01T00:00",
+      "payoff": -27243.9531,
+      "currency": "INR",
+      "nominalValue": 3973292.7177,
+      "nominalRate": 0.09,
+      "nominalAccrued": 27243.9531,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-03-01T00:00",
+      "payoff": 27243.9531,
+      "currency": "INR",
+      "nominalValue": 3973292.7177,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-04-01T00:00",
+      "payoff": -30371.1964,
+      "currency": "INR",
+      "nominalValue": 4003663.9141,
+      "nominalRate": 0.09,
+      "nominalAccrued": 30371.1964,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-04-01T00:00",
+      "payoff": 30371.1964,
+      "currency": "INR",
+      "nominalValue": 4003663.9141,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-05-01T00:00",
+      "payoff": -29616.144,
+      "currency": "INR",
+      "nominalValue": 4033280.0581,
+      "nominalRate": 0.09,
+      "nominalAccrued": 29616.144,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-05-01T00:00",
+      "payoff": 29616.144,
+      "currency": "INR",
+      "nominalValue": 4033280.0581,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-06-01T00:00",
+      "payoff": -30829.7298,
+      "currency": "INR",
+      "nominalValue": 4064109.7878,
+      "nominalRate": 0.09,
+      "nominalAccrued": 30829.7298,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-06-01T00:00",
+      "payoff": 30829.7298,
+      "currency": "INR",
+      "nominalValue": 4064109.7878,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-07-01T00:00",
+      "payoff": -30063.2779,
+      "currency": "INR",
+      "nominalValue": 4094173.0657,
+      "nominalRate": 0.09,
+      "nominalAccrued": 30063.2779,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-07-01T00:00",
+      "payoff": 30063.2779,
+      "currency": "INR",
+      "nominalValue": 4094173.0657,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-08-01T00:00",
+      "payoff": -31295.1859,
+      "currency": "INR",
+      "nominalValue": 4125468.2516,
+      "nominalRate": 0.09,
+      "nominalAccrued": 31295.1859,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-08-01T00:00",
+      "payoff": 31295.1859,
+      "currency": "INR",
+      "nominalValue": 4125468.2516,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-09-01T00:00",
+      "payoff": -31534.4012,
+      "currency": "INR",
+      "nominalValue": 4157002.6528,
+      "nominalRate": 0.09,
+      "nominalAccrued": 31534.4012,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-09-01T00:00",
+      "payoff": 31534.4012,
+      "currency": "INR",
+      "nominalValue": 4157002.6528,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-10-01T00:00",
+      "payoff": -30750.4306,
+      "currency": "INR",
+      "nominalValue": 4187753.0834,
+      "nominalRate": 0.09,
+      "nominalAccrued": 30750.4306,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-10-01T00:00",
+      "payoff": 30750.4306,
+      "currency": "INR",
+      "nominalValue": 4187753.0834,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-11-01T00:00",
+      "payoff": -32010.4962,
+      "currency": "INR",
+      "nominalValue": 4219763.5795,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32010.4962,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-11-01T00:00",
+      "payoff": 32010.4962,
+      "currency": "INR",
+      "nominalValue": 4219763.5795,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2029-12-01T00:00",
+      "payoff": -31214.6895,
+      "currency": "INR",
+      "nominalValue": 4250978.269,
+      "nominalRate": 0.09,
+      "nominalAccrued": 31214.6895,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2029-12-01T00:00",
+      "payoff": 31214.6895,
+      "currency": "INR",
+      "nominalValue": 4250978.269,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-01-01T00:00",
+      "payoff": -32493.7791,
+      "currency": "INR",
+      "nominalValue": 4283472.0481,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32493.7791,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-01-01T00:00",
+      "payoff": 32493.7791,
+      "currency": "INR",
+      "nominalValue": 4283472.0481,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-02-01T00:00",
+      "payoff": -32742.1562,
+      "currency": "INR",
+      "nominalValue": 4316214.2043,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32742.1562,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-02-01T00:00",
+      "payoff": 32742.1562,
+      "currency": "INR",
+      "nominalValue": 4316214.2043,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-03-01T00:00",
+      "payoff": -29799.6159,
+      "currency": "INR",
+      "nominalValue": 4346013.8202,
+      "nominalRate": 0.09,
+      "nominalAccrued": 29799.6159,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-03-01T00:00",
+      "payoff": 29799.6159,
+      "currency": "INR",
+      "nominalValue": 4346013.8202,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-04-01T00:00",
+      "payoff": -33220.2152,
+      "currency": "INR",
+      "nominalValue": 4379234.0354,
+      "nominalRate": 0.09,
+      "nominalAccrued": 33220.2152,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-04-01T00:00",
+      "payoff": 33220.2152,
+      "currency": "INR",
+      "nominalValue": 4379234.0354,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-05-01T00:00",
+      "payoff": -32394.334,
+      "currency": "INR",
+      "nominalValue": 4411628.3694,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32394.334,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-05-01T00:00",
+      "payoff": 32394.334,
+      "currency": "INR",
+      "nominalValue": 4411628.3694,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-06-01T00:00",
+      "payoff": -33721.7621,
+      "currency": "INR",
+      "nominalValue": 4445350.1314,
+      "nominalRate": 0.09,
+      "nominalAccrued": 33721.7621,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-06-01T00:00",
+      "payoff": 33721.7621,
+      "currency": "INR",
+      "nominalValue": 4445350.1314,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-07-01T00:00",
+      "payoff": -32883.4119,
+      "currency": "INR",
+      "nominalValue": 4478233.5434,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32883.4119,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-07-01T00:00",
+      "payoff": 32883.4119,
+      "currency": "INR",
+      "nominalValue": 4478233.5434,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-08-01T00:00",
+      "payoff": -34230.8811,
+      "currency": "INR",
+      "nominalValue": 4512464.4244,
+      "nominalRate": 0.09,
+      "nominalAccrued": 34230.8811,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-08-01T00:00",
+      "payoff": 34230.8811,
+      "currency": "INR",
+      "nominalValue": 4512464.4244,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-09-01T00:00",
+      "payoff": -34492.5363,
+      "currency": "INR",
+      "nominalValue": 4546956.9607,
+      "nominalRate": 0.09,
+      "nominalAccrued": 34492.5363,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-09-01T00:00",
+      "payoff": 34492.5363,
+      "currency": "INR",
+      "nominalValue": 4546956.9607,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-10-01T00:00",
+      "payoff": -33635.0241,
+      "currency": "INR",
+      "nominalValue": 4580591.9848,
+      "nominalRate": 0.09,
+      "nominalAccrued": 33635.0241,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-10-01T00:00",
+      "payoff": 33635.0241,
+      "currency": "INR",
+      "nominalValue": 4580591.9848,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-11-01T00:00",
+      "payoff": -35013.2922,
+      "currency": "INR",
+      "nominalValue": 4615605.277,
+      "nominalRate": 0.09,
+      "nominalAccrued": 35013.2922,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-11-01T00:00",
+      "payoff": 35013.2922,
+      "currency": "INR",
+      "nominalValue": 4615605.277,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2030-12-01T00:00",
+      "payoff": -34142.8336,
+      "currency": "INR",
+      "nominalValue": 4649748.1105,
+      "nominalRate": 0.09,
+      "nominalAccrued": 34142.8336,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2030-12-01T00:00",
+      "payoff": 34142.8336,
+      "currency": "INR",
+      "nominalValue": 4649748.1105,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-01-01T00:00",
+      "payoff": -35541.9102,
+      "currency": "INR",
+      "nominalValue": 4685290.0207,
+      "nominalRate": 0.09,
+      "nominalAccrued": 35541.9102,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-01-01T00:00",
+      "payoff": 35541.9102,
+      "currency": "INR",
+      "nominalValue": 4685290.0207,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-02-01T00:00",
+      "payoff": -35813.5867,
+      "currency": "INR",
+      "nominalValue": 4721103.6075,
+      "nominalRate": 0.09,
+      "nominalAccrued": 35813.5867,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-02-01T00:00",
+      "payoff": 35813.5867,
+      "currency": "INR",
+      "nominalValue": 4721103.6075,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-03-01T00:00",
+      "payoff": -32595.0167,
+      "currency": "INR",
+      "nominalValue": 4753698.6242,
+      "nominalRate": 0.09,
+      "nominalAccrued": 32595.0167,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-03-01T00:00",
+      "payoff": 32595.0167,
+      "currency": "INR",
+      "nominalValue": 4753698.6242,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-04-01T00:00",
+      "payoff": -36336.4909,
+      "currency": "INR",
+      "nominalValue": 4790035.115,
+      "nominalRate": 0.09,
+      "nominalAccrued": 36336.4909,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-04-01T00:00",
+      "payoff": 36336.4909,
+      "currency": "INR",
+      "nominalValue": 4790035.115,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-05-01T00:00",
+      "payoff": -35433.1365,
+      "currency": "INR",
+      "nominalValue": 4825468.2515,
+      "nominalRate": 0.09,
+      "nominalAccrued": 35433.1365,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-05-01T00:00",
+      "payoff": 35433.1365,
+      "currency": "INR",
+      "nominalValue": 4825468.2515,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-06-01T00:00",
+      "payoff": -36885.0861,
+      "currency": "INR",
+      "nominalValue": 4862353.3376,
+      "nominalRate": 0.09,
+      "nominalAccrued": 36885.0861,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-06-01T00:00",
+      "payoff": 36885.0861,
+      "currency": "INR",
+      "nominalValue": 4862353.3376,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-07-01T00:00",
+      "payoff": -35968.0932,
+      "currency": "INR",
+      "nominalValue": 4898321.4308,
+      "nominalRate": 0.09,
+      "nominalAccrued": 35968.0932,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-07-01T00:00",
+      "payoff": 35968.0932,
+      "currency": "INR",
+      "nominalValue": 4898321.4308,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-08-01T00:00",
+      "payoff": -37441.9638,
+      "currency": "INR",
+      "nominalValue": 4935763.3946,
+      "nominalRate": 0.09,
+      "nominalAccrued": 37441.9638,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-08-01T00:00",
+      "payoff": 37441.9638,
+      "currency": "INR",
+      "nominalValue": 4935763.3946,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-09-01T00:00",
+      "payoff": -37728.164,
+      "currency": "INR",
+      "nominalValue": 4973491.5586,
+      "nominalRate": 0.09,
+      "nominalAccrued": 37728.164,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-09-01T00:00",
+      "payoff": 37728.164,
+      "currency": "INR",
+      "nominalValue": 4973491.5586,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-10-01T00:00",
+      "payoff": -36790.2115,
+      "currency": "INR",
+      "nominalValue": 5010281.7701,
+      "nominalRate": 0.09,
+      "nominalAccrued": 36790.2115,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-10-01T00:00",
+      "payoff": 36790.2115,
+      "currency": "INR",
+      "nominalValue": 5010281.7701,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-11-01T00:00",
+      "payoff": -38297.7702,
+      "currency": "INR",
+      "nominalValue": 5048579.5404,
+      "nominalRate": 0.09,
+      "nominalAccrued": 38297.7702,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-11-01T00:00",
+      "payoff": 38297.7702,
+      "currency": "INR",
+      "nominalValue": 5048579.5404,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2031-12-01T00:00",
+      "payoff": -37345.6569,
+      "currency": "INR",
+      "nominalValue": 5085925.1972,
+      "nominalRate": 0.09,
+      "nominalAccrued": 37345.6569,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2031-12-01T00:00",
+      "payoff": 37345.6569,
+      "currency": "INR",
+      "nominalValue": 5085925.1972,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-01-01T00:00",
+      "payoff": -38875.9762,
+      "currency": "INR",
+      "nominalValue": 5124801.1734,
+      "nominalRate": 0.09,
+      "nominalAccrued": 38875.9762,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-01-01T00:00",
+      "payoff": 38875.9762,
+      "currency": "INR",
+      "nominalValue": 5124801.1734,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-02-01T00:00",
+      "payoff": -39173.1377,
+      "currency": "INR",
+      "nominalValue": 5163974.3111,
+      "nominalRate": 0.09,
+      "nominalAccrued": 39173.1377,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-02-01T00:00",
+      "payoff": 39173.1377,
+      "currency": "INR",
+      "nominalValue": 5163974.3111,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-03-01T00:00",
+      "payoff": -36925.9533,
+      "currency": "INR",
+      "nominalValue": 5200900.2644,
+      "nominalRate": 0.09,
+      "nominalAccrued": 36925.9533,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-03-01T00:00",
+      "payoff": 36925.9533,
+      "currency": "INR",
+      "nominalValue": 5200900.2644,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-04-01T00:00",
+      "payoff": -39754.8267,
+      "currency": "INR",
+      "nominalValue": 5240655.0911,
+      "nominalRate": 0.09,
+      "nominalAccrued": 39754.8267,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-04-01T00:00",
+      "payoff": 39754.8267,
+      "currency": "INR",
+      "nominalValue": 5240655.0911,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-05-01T00:00",
+      "payoff": -38766.4897,
+      "currency": "INR",
+      "nominalValue": 5279421.5808,
+      "nominalRate": 0.09,
+      "nominalAccrued": 38766.4897,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-05-01T00:00",
+      "payoff": 38766.4897,
+      "currency": "INR",
+      "nominalValue": 5279421.5808,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-06-01T00:00",
+      "payoff": -40355.0307,
+      "currency": "INR",
+      "nominalValue": 5319776.6115,
+      "nominalRate": 0.09,
+      "nominalAccrued": 40355.0307,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-06-01T00:00",
+      "payoff": 40355.0307,
+      "currency": "INR",
+      "nominalValue": 5319776.6115,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-07-01T00:00",
+      "payoff": -39351.7722,
+      "currency": "INR",
+      "nominalValue": 5359128.3837,
+      "nominalRate": 0.09,
+      "nominalAccrued": 39351.7722,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-07-01T00:00",
+      "payoff": 39351.7722,
+      "currency": "INR",
+      "nominalValue": 5359128.3837,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-08-01T00:00",
+      "payoff": -40964.2964,
+      "currency": "INR",
+      "nominalValue": 5400092.6802,
+      "nominalRate": 0.09,
+      "nominalAccrued": 40964.2964,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-08-01T00:00",
+      "payoff": 40964.2964,
+      "currency": "INR",
+      "nominalValue": 5400092.6802,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-09-01T00:00",
+      "payoff": -41277.4208,
+      "currency": "INR",
+      "nominalValue": 5441370.1009,
+      "nominalRate": 0.09,
+      "nominalAccrued": 41277.4208,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-09-01T00:00",
+      "payoff": 41277.4208,
+      "currency": "INR",
+      "nominalValue": 5441370.1009,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-10-01T00:00",
+      "payoff": -40251.2309,
+      "currency": "INR",
+      "nominalValue": 5481621.3318,
+      "nominalRate": 0.09,
+      "nominalAccrued": 40251.2309,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-10-01T00:00",
+      "payoff": 40251.2309,
+      "currency": "INR",
+      "nominalValue": 5481621.3318,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-11-01T00:00",
+      "payoff": -41900.6124,
+      "currency": "INR",
+      "nominalValue": 5523521.9442,
+      "nominalRate": 0.09,
+      "nominalAccrued": 41900.6124,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-11-01T00:00",
+      "payoff": 41900.6124,
+      "currency": "INR",
+      "nominalValue": 5523521.9442,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2032-12-01T00:00",
+      "payoff": -40858.9295,
+      "currency": "INR",
+      "nominalValue": 5564380.8736,
+      "nominalRate": 0.09,
+      "nominalAccrued": 40858.9295,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2032-12-01T00:00",
+      "payoff": 40858.9295,
+      "currency": "INR",
+      "nominalValue": 5564380.8736,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-01-01T00:00",
+      "payoff": -42533.2127,
+      "currency": "INR",
+      "nominalValue": 5606914.0863,
+      "nominalRate": 0.09,
+      "nominalAccrued": 42533.2127,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-01-01T00:00",
+      "payoff": 42533.2127,
+      "currency": "INR",
+      "nominalValue": 5606914.0863,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-02-01T00:00",
+      "payoff": -42858.3296,
+      "currency": "INR",
+      "nominalValue": 5649772.4159,
+      "nominalRate": 0.09,
+      "nominalAccrued": 42858.3296,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-02-01T00:00",
+      "payoff": 42858.3296,
+      "currency": "INR",
+      "nominalValue": 5649772.4159,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-03-01T00:00",
+      "payoff": -39006.6479,
+      "currency": "INR",
+      "nominalValue": 5688779.0638,
+      "nominalRate": 0.09,
+      "nominalAccrued": 39006.6479,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-03-01T00:00",
+      "payoff": 39006.6479,
+      "currency": "INR",
+      "nominalValue": 5688779.0638,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-04-01T00:00",
+      "payoff": -43484.092,
+      "currency": "INR",
+      "nominalValue": 5732263.1559,
+      "nominalRate": 0.09,
+      "nominalAccrued": 43484.092,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-04-01T00:00",
+      "payoff": 43484.092,
+      "currency": "INR",
+      "nominalValue": 5732263.1559,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-05-01T00:00",
+      "payoff": -42403.0425,
+      "currency": "INR",
+      "nominalValue": 5774666.1984,
+      "nominalRate": 0.09,
+      "nominalAccrued": 42403.0425,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-05-01T00:00",
+      "payoff": 42403.0425,
+      "currency": "INR",
+      "nominalValue": 5774666.1984,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-06-01T00:00",
+      "payoff": -44140.5992,
+      "currency": "INR",
+      "nominalValue": 5818806.7975,
+      "nominalRate": 0.09,
+      "nominalAccrued": 44140.5992,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-06-01T00:00",
+      "payoff": 44140.5992,
+      "currency": "INR",
+      "nominalValue": 5818806.7975,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-07-01T00:00",
+      "payoff": -43043.2284,
+      "currency": "INR",
+      "nominalValue": 5861850.0259,
+      "nominalRate": 0.09,
+      "nominalAccrued": 43043.2284,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-07-01T00:00",
+      "payoff": 43043.2284,
+      "currency": "INR",
+      "nominalValue": 5861850.0259,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-08-01T00:00",
+      "payoff": -44807.018,
+      "currency": "INR",
+      "nominalValue": 5906657.0439,
+      "nominalRate": 0.09,
+      "nominalAccrued": 44807.018,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-08-01T00:00",
+      "payoff": 44807.018,
+      "currency": "INR",
+      "nominalValue": 5906657.0439,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-09-01T00:00",
+      "payoff": -45149.5155,
+      "currency": "INR",
+      "nominalValue": 5951806.5594,
+      "nominalRate": 0.09,
+      "nominalAccrued": 45149.5155,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-09-01T00:00",
+      "payoff": 45149.5155,
+      "currency": "INR",
+      "nominalValue": 5951806.5594,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-10-01T00:00",
+      "payoff": -44027.0622,
+      "currency": "INR",
+      "nominalValue": 5995833.6216,
+      "nominalRate": 0.09,
+      "nominalAccrued": 44027.0622,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-10-01T00:00",
+      "payoff": 44027.0622,
+      "currency": "INR",
+      "nominalValue": 5995833.6216,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-11-01T00:00",
+      "payoff": -45831.1666,
+      "currency": "INR",
+      "nominalValue": 6041664.7882,
+      "nominalRate": 0.09,
+      "nominalAccrued": 45831.1666,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-11-01T00:00",
+      "payoff": 45831.1666,
+      "currency": "INR",
+      "nominalValue": 6041664.7882,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "PR",
+      "time": "2033-12-01T00:00",
+      "payoff": -44691.7669,
+      "currency": "INR",
+      "nominalValue": 6086356.5551,
+      "nominalRate": 0.09,
+      "nominalAccrued": 44691.7669,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2033-12-01T00:00",
+      "payoff": 44691.7669,
+      "currency": "INR",
+      "nominalValue": 6086356.5551,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "IP",
+      "time": "2034-01-01T00:00",
+      "payoff": 46523.109,
+      "currency": "INR",
+      "nominalValue": 6086356.5551,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    },
+    {
+      "type": "MD",
+      "time": "2034-01-01T00:00",
+      "payoff": 6086356.5551,
+      "currency": "INR",
+      "nominalValue": 0.0,
+      "nominalRate": 0.09,
+      "nominalAccrued": 0.0,
+      "contractId": "contract_001"
+    }
+  ]
+}
