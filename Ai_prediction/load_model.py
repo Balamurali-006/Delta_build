@@ -74,7 +74,7 @@ with open("actus_risk_model.pkl", "rb") as f:
 with open("feature_cols.json", "r") as f:
     FEATURE_COLS = json.load(f)
 
-print("✅ Model loaded!")
+print("[SUCCESS] Model loaded!")
 print(f"   sklearn version   : {sk_version}")
 print(f"   Features expected : {len(FEATURE_COLS)}\n")
 

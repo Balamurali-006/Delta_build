@@ -307,7 +307,7 @@ def store_to_blockchain(
     """
     log.info("⛓️  Storing to blockchain...")
     
-    blockchain_dir = Path(__file__).parent / "blockchain_test"
+    blockchain_dir = Path(__file__).parent / "blockchain"
     
     try:
         # Add blockchain directory to path temporarily
@@ -343,15 +343,17 @@ def store_to_blockchain(
         log.info(f"✅ Connected to blockchain: {rpc_url}")
         
         # Load contract ABI
-        abi_file = blockchain_dir / "artifacts/contracts/ContractRegistry.sol/ContractRegistry.json"
+        abi_file = blockchain_dir / "abi.json"
         if not abi_file.exists():
             log.error(f"❌ ABI file not found: {abi_file}")
             return None
         
         with open(abi_file) as f:
-            contract_json = json.load(f)
+            raw_abi = json.load(f)
         
-        abi = contract_json["abi"]
+        # Determine if it's a full Hardhat artifact or just the ABI array
+        abi = raw_abi["abi"] if isinstance(raw_abi, dict) and "abi" in raw_abi else raw_abi
+        
         contract = w3.eth.contract(address=contract_address, abi=abi)
         
         # Prepare combined payload

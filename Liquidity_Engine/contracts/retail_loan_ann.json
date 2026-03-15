@@ -1,0 +1,16 @@
+{
+    "contractType": "ANN",
+    "contractID": "ANN_RETAIL_004",
+    "contractRole": "RPA",
+    "notionalPrincipal": 800000,
+    "nominalInterestRate": 0.11,
+    "currency": "INR",
+    "initialExchangeDate": "2024-05-01",
+    "maturityDate": "2027-04-30",
+    "statusDate": "2024-04-30",
+    "contractDealDate": "2024-04-30",
+    "cycleOfInterestPayment": "P1ML0",
+    "cycleAnchorDateOfInterestPayment": "2024-06-01",
+    "cycleOfPrincipalRedemption": "P1ML0",
+    "cycleAnchorDateOfPrincipalRedemption": "2024-06-01"
+}

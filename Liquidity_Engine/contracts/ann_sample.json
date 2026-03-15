@@ -1,0 +1,16 @@
+{
+    "contractType": "ANN",
+    "contractID": "ANN_LOAN_002",
+    "contractRole": "RPA",
+    "notionalPrincipal": 2000000,
+    "nominalInterestRate": 0.09,
+    "currency": "INR",
+    "initialExchangeDate": "2024-01-01",
+    "maturityDate": "2034-01-01",
+    "statusDate": "2023-12-31",
+    "contractDealDate": "2024-01-01",
+    "cycleOfInterestPayment": "P1ML0",
+    "cycleAnchorDateOfInterestPayment": "2024-02-01",
+    "cycleOfPrincipalRedemption": "P1ML0",
+    "cycleAnchorDateOfPrincipalRedemption": "2024-02-01"
+}

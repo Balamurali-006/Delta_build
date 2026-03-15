@@ -1,0 +1,16 @@
+{
+    "contractType": "LAM",
+    "contractID": "LAM_AGRI_005",
+    "contractRole": "RPA",
+    "notionalPrincipal": 1200000,
+    "nominalInterestRate": 0.085,
+    "currency": "INR",
+    "initialExchangeDate": "2024-06-01",
+    "maturityDate": "2030-05-31",
+    "statusDate": "2024-05-31",
+    "contractDealDate": "2024-05-31",
+    "cycleOfInterestPayment": "P3ML0",
+    "cycleAnchorDateOfInterestPayment": "2024-09-01",
+    "cycleOfPrincipalRedemption": "P3ML0",
+    "cycleAnchorDateOfPrincipalRedemption": "2024-09-01"
+}

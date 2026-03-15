@@ -21,7 +21,7 @@ import re
 import time
 import logging
 from datetime import datetime
-from typing import Optional
+from typing import Optional, Dict, Any
 
 import pdfplumber
 from fastapi import FastAPI, UploadFile, File, HTTPException
@@ -61,7 +61,7 @@ Upload any financial contract → AI extracts ACTUS terms → simulate cash flow
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "*"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:5174", "*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -624,3 +624,276 @@ def full_pipeline_pdf(
     except Exception as e:
         log.exception("Unexpected error in /full-pipeline-pdf")
         raise HTTPException(500, f"Pipeline failed: {e}")
+
+
+# ── POST /predict-risk ────────────────────────────────────────────────────────
+@app.post("/predict-risk", tags=["Pipeline"])
+def predict_risk_endpoint(payload: dict):
+    """
+    Run AI risk prediction on ACTUS engine output.
+
+    Expects the full ACTUS output dict:
+    {
+        "success": true,
+        "actusJson": {...},
+        "summary": {...},
+        "cashFlows": [...]
+    }
+
+    Returns risk prediction:
+    {
+        "contract_id": str,
+        "default_probability": float,
+        "risk_category": "LOW" | "MEDIUM" | "HIGH",
+        "expected_loss": float,
+        "recommendation": str,
+        "negotiation_tips": [str]  (only for HIGH risk)
+    }
+    """
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    ai_dir = _Path(__file__).resolve().parent.parent / "Ai_prediction"
+
+    if not ai_dir.exists():
+        raise HTTPException(500, f"Ai_prediction directory not found at {ai_dir}")
+
+    original_cwd = os.getcwd()
+    try:
+        os.chdir(str(ai_dir))
+        if str(ai_dir) not in _sys.path:
+            _sys.path.insert(0, str(ai_dir))
+
+        from load_model import predict_risk as _predict_risk
+
+        result = _predict_risk(payload)
+
+        if "error" in result:
+            raise HTTPException(422, result["error"])
+
+        log.info(
+            f"AI Risk prediction complete — "
+            f"category={result.get('risk_category')}  "
+            f"prob={result.get('default_probability')}"
+        )
+
+        return {"success": True, "riskPrediction": result}
+
+    except ImportError as e:
+        log.exception("Cannot import AI model")
+        raise HTTPException(503, f"AI model not available: {e}")
+    except HTTPException:
+        raise
+    except Exception as e:
+        log.exception("Unexpected error in /predict-risk")
+        raise HTTPException(500, f"Risk prediction failed: {e}")
+    finally:
+        os.chdir(original_cwd)
+
+
+# ── GET /liquidity-forecast ───────────────────────────────────────────────────
+@app.get("/liquidity-forecast", tags=["Liquidity"])
+def liquidity_forecast_endpoint():
+    """
+    Runs the Liquidity_Engine/liquidity_forecaster.py script and returns the 
+    generated liquidity_report.json.
+    """
+    import sys
+    import subprocess
+    from pathlib import Path
+
+    base_dir = Path(__file__).resolve().parent.parent
+    liquidity_dir = base_dir / "Liquidity_Engine"
+    script_path = liquidity_dir / "liquidity_forecaster.py"
+    report_path = liquidity_dir / "liquidity_report.json"
+
+    if not script_path.exists():
+        raise HTTPException(500, "liquidity_forecaster.py not found.")
+
+    try:
+        # Run the script using the current Python executable (the venv)
+        # Note: This might take a bit since it requests /simulate
+        result = subprocess.run(
+            [sys.executable, str(script_path)],
+            cwd=str(liquidity_dir),
+            capture_output=True,
+            text=True
+        )
+
+        log.info(f"Liquidity subproc stdout: {result.stdout}")
+        if result.stderr:
+            log.warning(f"Liquidity subproc stderr: {result.stderr}")
+
+        if not report_path.exists():
+            raise HTTPException(500, "Forecast ran but report JSON was not created.")
+
+        with open(report_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        return {"success": True, "forecast": data}
+
+    except Exception as e:
+        log.exception("Unexpected error in /liquidity-forecast")
+        raise HTTPException(500, f"Liquidity forecast failed: {e}")
+
+
+# ── POST /negotiate ────────────────────────────────────────────────────────
+@app.post("/negotiate", tags=["Intelligence"])
+def negotiate_endpoint(payload: dict):
+    """
+    Run AI Negotiation Agent on ACTUS engine output.
+
+    Expects:
+    {
+        "actusOutput": {...},
+        "riskData": {...}
+    }
+    """
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    base_dir = _Path(__file__).resolve().parent.parent
+    neg_dir = base_dir / "Negotiation_Agent"
+
+    if not neg_dir.exists():
+        raise HTTPException(500, f"Negotiation_Agent directory not found.")
+
+    original_cwd = os.getcwd()
+    try:
+        os.chdir(str(neg_dir))
+        if str(neg_dir) not in _sys.path:
+            _sys.path.insert(0, str(neg_dir))
+
+        from negotiator import negotiate_terms
+
+        actus_output = payload.get("actusOutput", {})
+        risk_result = payload.get("riskData", {})
+
+        result = negotiate_terms(actus_output, risk_result)
+
+        if not result:
+            raise HTTPException(500, "Negotiation failed (returned None). Verify GROQ_API_KEY.")
+
+        return {"success": True, "negotiated_terms": result}
+    except Exception as e:
+        log.exception("Unexpected error in /negotiate")
+        raise HTTPException(500, f"Negotiation failed: {e}")
+    finally:
+        os.chdir(original_cwd)
+
+
+# ── POST /stress-test ───────────────────────────────────────────────────────
+@app.post("/stress-test", tags=["Intelligence"])
+def stress_test_endpoint(payload: dict):
+    """
+    Run Scenario Stress Testing Agent.
+    
+    Expects:
+    {
+        "actusOutput": {...},
+        "riskData": {...},
+        "scenario": "Interest rates rise by 2%"
+    }
+    """
+    import sys as _sys
+    from pathlib import Path as _Path
+    import tempfile
+    import json
+
+    base_dir = _Path(__file__).resolve().parent.parent
+    stress_dir = base_dir / "ScenarioStressTesting"
+
+    if not stress_dir.exists():
+        raise HTTPException(500, f"ScenarioStressTesting directory not found.")
+
+    original_cwd = os.getcwd()
+    try:
+        os.chdir(str(stress_dir))
+        if str(stress_dir) not in _sys.path:
+            _sys.path.insert(0, str(stress_dir))
+
+        import stress_test_agent
+        import importlib
+        importlib.reload(stress_test_agent)
+        from stress_test_agent import StressTestingAgent
+
+        actus_output = payload.get("actusOutput", {})
+        risk_data = payload.get("riskData", {})
+        scenario = payload.get("scenario", "")
+
+        mapped_risk = {
+            "Risk Category": risk_data.get("risk_category", "UNKNOWN"),
+            "Default Probability": str(risk_data.get("default_probability", 0)),
+            "Expected Loss": str(risk_data.get("expected_loss", 0)),
+            "Recommendation": risk_data.get("recommendation", "UNKNOWN")
+        }
+
+        agent = StressTestingAgent()
+
+        with tempfile.NamedTemporaryFile("w", delete=False, suffix=".json") as tmp:
+            json.dump(actus_output, tmp)
+            tmp_path = tmp.name
+
+        try:
+            result = agent.run_scenario(tmp_path, mapped_risk, scenario)
+            return {"success": True, "stress_test": result["data"]}
+        finally:
+            if os.path.exists(tmp_path):
+                os.remove(tmp_path)
+
+    except Exception as e:
+        log.exception("Unexpected error in /stress-test")
+        raise HTTPException(500, f"Stress test failed: {e}")
+    finally:
+        os.chdir(original_cwd)
+
+@app.post("/blockchain-store")
+async def blockchain_store_endpoint(payload: Dict[str, Any]):
+    """
+    Trigger the blockchain interaction script from the UI.
+    """
+    import subprocess
+    from pathlib import Path as _Path
+    import sys
+    import json
+    
+    base_dir = _Path(__file__).resolve().parent.parent
+    blockchain_dir = base_dir / "blockchain"
+    
+    if not blockchain_dir.exists():
+        raise HTTPException(500, "Blockchain directory not found.")
+    
+    try:
+        log.info("⛓️  Triggering blockchain interaction with data...")
+        
+        # Prepare the data string from frontend payload
+        # This allows storing actual contract details rather than demo data
+        data_str = json.dumps(payload)
+        
+        result = subprocess.run(
+            [sys.executable, "interact.py", data_str],
+            cwd=str(blockchain_dir),
+            capture_output=True,
+            text=True
+        )
+        
+        if result.returncode == 0:
+            import re
+            match = re.search(r"Transaction Hash:\s*(0x[0-9a-fA-F]+)", result.stdout)
+            tx_hash = match.group(1) if match else "Unknown"
+                
+            return {
+                "success": True, 
+                "message": "Data successfully stored on Tenderly Testnet",
+                "tx_hash": tx_hash,
+                "output": result.stdout
+            }
+        else:
+            return {
+                "success": False,
+                "error": result.stderr or result.stdout
+            }
+            
+    except Exception as e:
+        log.exception("Blockchain storage failed")
+        raise HTTPException(500, f"Blockchain storage failed: {str(e)}")

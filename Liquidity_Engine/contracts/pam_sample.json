@@ -1,0 +1,14 @@
+{
+    "contractType": "PAM",
+    "contractID": "PAM_LOAN_001",
+    "contractRole": "RPA",
+    "notionalPrincipal": 1000000,
+    "nominalInterestRate": 0.08,
+    "currency": "INR",
+    "initialExchangeDate": "2024-01-01",
+    "maturityDate": "2027-01-01",
+    "statusDate": "2023-12-31",
+    "contractDealDate": "2024-01-01",
+    "cycleOfInterestPayment": "P1YL0",
+    "cycleAnchorDateOfInterestPayment": "2025-01-01"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "SUCCESS",
+  "original_risk": {
+    "contract_id": "contract_001",
+    "default_probability": 0.0005,
+    "risk_category": "LOW",
+    "expected_loss": 1263.96,
+    "recommendation": "APPROVE"
+  },
+  "optimized_contract_terms": {
+    "analysis": "The loan has been categorized as LOW risk due to its low default probability of 0.05% and expected loss of 1263.96 INR, which is a negligible amount compared to the principal amount of 4000000 INR. This suggests that the borrower has a stable financial profile and a high likelihood of repaying the loan.",
+    "action_required": false,
+    "optimized_terms": [
+      {
+        "parameter": "Interest Rate",
+        "current": "11.5%",
+        "suggested": "11.8%",
+        "reason": "A slight increase in interest rate can improve the bank's revenue without significantly affecting the borrower's ability to repay the loan."
+      },
+      {
+        "parameter": "Cross-Selling Opportunities",
+        "current": "None",
+        "suggested": "Offer a credit card or insurance product",
+        "reason": "Bundling products can increase customer loyalty and provide additional revenue streams for the bank."
+      }
+    ],
+    "revised_actus_json": {
+      "nominalInterestRate": 0.118,
+      "principalAmount": 4000000,
+      "maturityDate": "2027-01-01",
+      "initialExchangeDate": "2024-01-01",
+      "paymentPeriod": "Monthly",
+      "dayCountConvention": "ACT/365"
+    },
+    "negotiation_summary": "We are pleased to offer you a competitive loan package with a slight adjustment to the interest rate and an opportunity to explore additional financial products. This revised offer is designed to provide a win-win solution for both you and our bank, ensuring a long-term and mutually beneficial relationship."
+  }
+}

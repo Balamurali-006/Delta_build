@@ -1,7 +1,20 @@
 [
   {
     "inputs": [],
-    "name": "getHash",
+    "name": "contractData",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getContract",
     "outputs": [
       {
         "internalType": "string",
@@ -16,26 +29,13 @@
     "inputs": [
       {
         "internalType": "string",
-        "name": "_hash",
+        "name": "_data",
         "type": "string"
       }
     ],
-    "name": "storeHash",
+    "name": "storeContract",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "storedHash",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function"
   }
 ]

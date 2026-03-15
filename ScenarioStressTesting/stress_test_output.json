@@ -1,0 +1,28 @@
+{
+  "scenario": "Interest Rates shift by +4%. Credit score adjusts by -100 points. Inflation jumps to 5%. Recovery rate at 30%. Collateral changes -15%.",
+  "base_case": {
+    "total_interest": 5581850.93,
+    "total_cashflow": 10581850.93,
+    "risk_category": "MEDIUM",
+    "default_probability": 52.82,
+    "expected_loss": 1584463.48
+  },
+  "stressed_case": {
+    "shocked_rate_pct": 12.75,
+    "revised_total_interest": 8133554.22,
+    "revised_total_cashflow": 13133554.219999999,
+    "delta_interest": 2551703.29,
+    "scenario_name": "Interest Rate Shift +4%",
+    "revised_risk_category": "HIGH",
+    "revised_default_probability_pct": 67.82,
+    "revised_expected_loss": 2551703.29,
+    "cashflow_impact_summary": "The total interest has increased by 2,551,703.29, and the total cashflow has increased by 2,551,703.29. The largest cashflow risk event remains the principal repayment of 5,000,000.00 due on 2044-03-01.",
+    "risk_impact_statement": "The risk profile has significantly increased due to the interest rate shift, with a 14.99% increase in default probability. The expected loss has also increased by 61.01%.",
+    "liquidity_warnings": [
+      "Increased interest payments may strain liquidity",
+      "Large principal repayment due on 2044-03-01"
+    ],
+    "recommendation": "REVIEW",
+    "recommendation_rationale": "The significant increase in default probability and expected loss warrants a thorough review of the contract. The large principal repayment due on 2044-03-01 poses a substantial liquidity risk."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "2024": {
+    "inflow": 464773.4,
+    "outflow": 500000,
+    "net_liquidity": -35226.6,
+    "status": "RISK"
+  },
+  "2025": {
+    "inflow": 859637.63,
+    "outflow": 1200000,
+    "net_liquidity": -340362.37,
+    "status": "RISK"
+  },
+  "2026": {
+    "inflow": 889950.27,
+    "outflow": 2000000,
+    "net_liquidity": -1110049.73,
+    "status": "RISK"
+  },
+  "2027": {
+    "inflow": 2940459.68,
+    "outflow": 1500000,
+    "net_liquidity": 1440459.68,
+    "status": "SAFE"
+  },
+  "2028": {
+    "inflow": 745646.39,
+    "outflow": 1500000,
+    "net_liquidity": -754353.61,
+    "status": "RISK"
+  },
+  "2029": {
+    "inflow": 5579615.47,
+    "outflow": 1000000,
+    "net_liquidity": 4579615.47,
+    "status": "SAFE"
+  },
+  "2030": {
+    "inflow": 1569596.7,
+    "outflow": 1000000,
+    "net_liquidity": 569596.7,
+    "status": "SAFE"
+  },
+  "2031": {
+    "inflow": 348941.67,
+    "outflow": 1000000,
+    "net_liquidity": -651058.33,
+    "status": "RISK"
+  },
+  "2032": {
+    "inflow": 382764.54,
+    "outflow": 1000000,
+    "net_liquidity": -617235.46,
+    "status": "RISK"
+  },
+  "2033": {
+    "inflow": 417580.55,
+    "outflow": 1000000,
+    "net_liquidity": -582419.45,
+    "status": "RISK"
+  },
+  "2034": {
+    "inflow": 4906303.73,
+    "outflow": 5000000,
+    "net_liquidity": -93696.27,
+    "status": "RISK"
+  }
+}
